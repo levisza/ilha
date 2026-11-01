@@ -27,6 +27,9 @@ adb shell pm grant app.ilha.debug android.permission.ANSWER_PHONE_CALLS
 adb shell pm grant app.ilha.debug android.permission.BLUETOOTH_CONNECT
 ```
 
+## Compilar no GitHub (sem instalar nada)
+O repositório já traz `.github/workflows/build.yml`: a cada push na `main` (ou em *Actions → Build APK → Run workflow*) o GitHub compila e guarda o APK em *Artifacts → ilha-debug-apk*. Cada build assina o APK de debug com uma chave nova: desinstale a versão antiga antes de instalar a nova.
+
 ## O que está implementado
 Fontes → providers → motor → overlay, como no documento.
 - **Providers:** mídia, chamadas, mensagens (com respostas rápidas por toque), timer/cronômetro/alarme, carregamento (watts e tempo até 100%), progresso/downloads, navegação, Live Updates (Android 16+), Bluetooth, silencioso/vibração e **Laboratório** (atividades falsas + teste de estresse).
