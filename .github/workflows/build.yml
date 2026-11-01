@@ -2,7 +2,7 @@ name: Build APK
 
 on:
   push:
-    branches: [main]
+    branches: [ "main" ]
   pull_request:
   workflow_dispatch:
 
@@ -20,7 +20,6 @@ jobs:
 
       - uses: android-actions/setup-android@v3
 
-      # Sem gradlew no repositório: o Gradle 8.13 é instalado aqui
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 8.13
@@ -35,7 +34,6 @@ jobs:
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
-      # Testes do motor (JVM puro). Não bloqueiam o APK.
       - name: Testes unitários
         continue-on-error: true
         run: gradle testDebugUnitTest --stacktrace
