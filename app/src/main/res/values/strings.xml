@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ilha</string>
+    <string name="a11y_label">Ilha (janela acima da barra de status)</string>
+    <string name="a11y_description">Usado somente para desenhar a ilha acima da barra de status ao redor da câmera. A Ilha não lê o conteúdo da tela, não toca na tela por você e não envia nada para fora do aparelho.</string>
+    <string name="listener_label">Ilha (notificações e mídia)</string>
+</resources>
