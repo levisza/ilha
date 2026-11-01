@@ -1,6 +1,6 @@
 [versions]
-agp = "8.13.0"
-kotlin = "2.3.21"
+agp = "9.3.0"
+kotlin = "2.4.20"
 composeBom = "2026.04.01"
 coreKtx = "1.17.0"
 activityCompose = "1.11.0"
@@ -31,5 +31,4 @@ turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
