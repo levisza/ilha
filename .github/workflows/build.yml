@@ -22,12 +22,7 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
         with:
-          sdk-version: 34
-          build-tools-version: 34.0.0
-
-      - name: Aceitar Licenças do Android SDK Automaticamente
-        run: |
-          yes | /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager --licenses || true
+          accept-android-sdk-licenses: true
 
       - uses: gradle/actions/setup-gradle@v4
         with:
