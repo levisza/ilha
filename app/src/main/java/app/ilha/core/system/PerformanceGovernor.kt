@@ -1,7 +1,7 @@
 package app.ilha.core.system
 
 import android.content.Context
-import android.os.Choreographer
+import android.view.Choreographer
 import android.os.PowerManager
 import android.os.SystemClock
 import app.ilha.core.model.Quality
